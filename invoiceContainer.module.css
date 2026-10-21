@@ -1,0 +1,145 @@
+.invoiceContainer{
+  width: 760px;
+  min-width: 665px;
+  max-width: 760px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  color: #222;
+  font-size: 13px;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 2px solid #333;
+  margin-bottom: 18px;
+}
+.invoiceContainer__header{
+  font-weight: 700;
+  font-size: 20px;
+  text-align: right;
+}
+
+.invoiceContainer__header > span{
+  font-weight: 400;
+  font-style: italic;
+  display: block;
+}
+
+
+
+.line {
+    display: flex;
+    flex-direction: row;
+  justify-content: space-between;
+}
+
+.invoiceContainer__logo {
+    width: 165px;
+    height: 92px;
+    object-fit: cover;
+    object-position: center 30%;
+}
+
+.details {
+  gap: 24px;
+  margin-bottom: 18px;
+}
+
+.hotelDetails,
+.guestDetails {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 3px;
+  overflow-wrap: anywhere;
+}
+
+.guestDetails {
+  text-align: right;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  border: 1px solid #999;
+  padding: 10px;
+  margin: 16px 0;
+}
+
+.infoGrid > div {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 5px 8px;
+}
+
+.paymentDetails {
+  border: 1px solid #999;
+  padding: 10px;
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+.signatory {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  border: 1px solid #999;
+  border-top: 0;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.signaturePlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin-top: 14px;
+}
+
+.signaturePlaceholder img {
+  display: block;
+  width: 150px;
+  height: 45px;
+}
+
+.invoiceContainer__header__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.label {
+    font-weight:700;
+}
+
+@media (max-width: 700px) {
+  .invoiceContainer {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+  }
+
+  .invoiceContainer__header {
+    font-size: 16px;
+  }
+
+  .details {
+    flex-direction: column;
+  }
+
+  .guestDetails {
+    text-align: left;
+  }
+
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+}

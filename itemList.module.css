@@ -1,0 +1,27 @@
+.table__header {
+    background-color: rgb(184, 183, 183);
+    border: 2px solid black;
+}
+
+.table,th,td {
+    border: 2px solid black;
+}
+.table {
+    border-collapse: collapse;
+    font-size: 0.72rem;
+    box-sizing: border-box;
+    margin: 10px 0px;
+    width:100%;
+}
+
+.table th,
+.table td {
+    border: 1px solid #333;
+    padding: 5px;
+    overflow-wrap: anywhere;
+}
+
+.table tfoot td {
+    font-weight: 700;
+    text-align: left;
+}
